@@ -1,0 +1,1916 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="favicon.ico" rel="icon" type="image/ico" />
+    <title>API Reference</title>
+
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cpf {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s, .highlight .sa, .highlight .dl {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf, .highlight .fm {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+  background-color: #272822;
+}
+.highlight .nn {
+  color: #ffffff;
+  background-color: #272822;
+}
+.highlight .nl {
+  color: #ffffff;
+  background-color: #272822;
+}
+.highlight .ni {
+  color: #ffffff;
+  background-color: #272822;
+}
+.highlight .bp {
+  color: #ffffff;
+  background-color: #272822;
+}
+.highlight .vg {
+  color: #ffffff;
+  background-color: #272822;
+}
+.highlight .vi {
+  color: #ffffff;
+  background-color: #272822;
+}
+.highlight .nv, .highlight .vm {
+  color: #ffffff;
+  background-color: #272822;
+}
+.highlight .w {
+  color: #ffffff;
+  background-color: #272822;
+}
+.highlight {
+  color: #ffffff;
+  background-color: #272822;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+  background-color: #272822;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <link href="stylesheets/screen-0a0d2ea0.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print-bccf8c07.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all-c5541673.js"></script>
+  </head>
+
+  <body class="index" data-languages="[&quot;json&quot;]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar-cad8cdcb.png" alt="Navbar" />
+      </span>
+    </a>
+    <div class="toc-wrapper">
+      <img src="images/logo-643ec635.png" class="logo" alt="Logo" />
+        <div class="lang-selector">
+              <a href="#" data-language-name="json">json</a>
+        </div>
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <ul id="toc" class="toc-list-h1">
+          <li>
+            <a href="#change-log" class="toc-h1 toc-link" data-title="Change Log">Change Log</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#2020-12-28" class="toc-h2 toc-link" data-title="2020-12-28">2020-12-28</a>
+                  </li>
+                  <li>
+                    <a href="#2020-5-13" class="toc-h2 toc-link" data-title="2020-5-13">2020-5-13</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#general-info" class="toc-h1 toc-link" data-title="General Info">General Info</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#general-api-information" class="toc-h2 toc-link" data-title="General API Information">General API Information</a>
+                  </li>
+                  <li>
+                    <a href="#http-return-codes" class="toc-h2 toc-link" data-title="HTTP Return Codes">HTTP Return Codes</a>
+                  </li>
+                  <li>
+                    <a href="#general-information-on-endpoints" class="toc-h2 toc-link" data-title="General Information on Endpoints">General Information on Endpoints</a>
+                  </li>
+                  <li>
+                    <a href="#authentication" class="toc-h2 toc-link" data-title="Authentication">Authentication</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#k-line-endpoints" class="toc-h1 toc-link" data-title="K-Line Endpoints">K-Line Endpoints</a>
+          </li>
+          <li>
+            <a href="#k-line-websocket-streams" class="toc-h1 toc-link" data-title="K-Line WebSocket streams">K-Line WebSocket streams</a>
+          </li>
+          <li>
+            <a href="#trading-endpoints" class="toc-h1 toc-link" data-title="Trading Endpoints">Trading Endpoints</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#position-history" class="toc-h2 toc-link" data-title="Position History">Position History</a>
+                  </li>
+                  <li>
+                    <a href="#position-holdings" class="toc-h2 toc-link" data-title="Position Holdings">Position Holdings</a>
+                  </li>
+                  <li>
+                    <a href="#positon-pendings" class="toc-h2 toc-link" data-title="Positon Pendings">Positon Pendings</a>
+                  </li>
+                  <li>
+                    <a href="#create-order" class="toc-h2 toc-link" data-title="Create Order">Create Order</a>
+                  </li>
+                  <li>
+                    <a href="#variation-margin" class="toc-h2 toc-link" data-title="Variation Margin">Variation Margin</a>
+                  </li>
+                  <li>
+                    <a href="#update-tp-sl-price" class="toc-h2 toc-link" data-title="Update TP/SL Price">Update TP/SL Price</a>
+                  </li>
+                  <li>
+                    <a href="#change-overnight-type" class="toc-h2 toc-link" data-title="Change Overnight Type">Change Overnight Type</a>
+                  </li>
+                  <li>
+                    <a href="#close-pending-position" class="toc-h2 toc-link" data-title="Close Pending Position">Close Pending Position</a>
+                  </li>
+                  <li>
+                    <a href="#close-holding-position" class="toc-h2 toc-link" data-title="Close Holding Position">Close Holding Position</a>
+                  </li>
+                  <li>
+                    <a href="#order-entity" class="toc-h2 toc-link" data-title="Order Entity">Order Entity</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#errors" class="toc-h1 toc-link" data-title="Errors">Errors</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#http-error-codes" class="toc-h2 toc-link" data-title="HTTP error codes">HTTP error codes</a>
+                  </li>
+                  <li>
+                    <a href="#100xxx-access-key-amp-signature-error" class="toc-h2 toc-link" data-title="100xxx - Access Key &amp; Signature Error">100xxx - Access Key &amp; Signature Error</a>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+        <ul class="toc-footer">
+            <li><a href='https://www.snapex.com'>SnapEx</a></li>
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id='change-log'>Change Log</h1><h2 id='2020-12-28'>2020-12-28</h2>
+<p>2st release of API document. </p>
+
+<ul>
+<li>add new trading api</li>
+<li>update trading currencyName value</li>
+</ul>
+<h2 id='2020-5-13'>2020-5-13</h2>
+<p>1st release of API document.</p>
+<h1 id='general-info'>General Info</h1><h2 id='general-api-information'>General API Information</h2>
+<ul>
+<li>Some endpoints will require an API Key. </li>
+<li>The base endpoint is: <code>https://api.snapex.com</code></li>
+<li>All endpoints return either a JSON object or array.</li>
+<li>Data is returned in ascending order. Oldest first, newest last.</li>
+<li>All time and timestamp related fields are in milliseconds.</li>
+</ul>
+<h2 id='http-return-codes'>HTTP Return Codes</h2>
+<ul>
+<li>HTTP 200 OK</li>
+<li>HTTP 4XX return codes are used for malformed requests; the issue is on the sender&#39;s side.</li>
+<li>HTTP 5XX return codes are used for internal errors; the issue is on SnapEx&#39;s side.</li>
+</ul>
+<h2 id='general-information-on-endpoints'>General Information on Endpoints</h2>
+<ul>
+<li>For GET endpoints, parameters must be sent as a query string.</li>
+<li>For POST, PUT, and DELETE endpoints, the parameters may be sent as a query string or in the request body with content type “application/x-www-form-urlencoded”. You may mix parameters between both the query string and request body if you wish to do so.</li>
+<li>Parameters may be sent in any order.</li>
+<li>If a parameter sent in both the query string and request body, the query string parameter will be used.</li>
+</ul>
+<h2 id='authentication'>Authentication</h2>
+<p><strong>Overview</strong></p>
+
+<p>The API request may be tampered during internet, therefore all private API must be signed by your API Key (Secrete Key).</p>
+
+<p>Each API Key has permission property, please check the API permission, and make sure your API key has proper permission.</p>
+
+<p>A valid request consists of below parts:</p>
+
+<ul>
+<li>API Path: for example https://api.spanex.com/v1/orders/history/get</li>
+<li>API Access Key: The &#39;Access Key&#39; in your API Key</li>
+<li>Signature Method: The Hash method that is used to sign, it uses HmacSHA256</li>
+<li>Signature Version: The version for the signature protocol, it uses 1</li>
+<li>Timestamp: The UTC time when the request is sent, e.g. 2017-05-11T16:22:06. It is useful to prevent the request to be intercepted by third-party.</li>
+<li>Parameters: Each API Method has a group of parameters, you can refer to detailed document for each of them.</li>
+<li>For GET request, all the parameters must be signed.</li>
+<li>For POST request, the parameters needn&#39;t be signed and they should be put in request body.</li>
+<li>Signature: The value after signed, it is guarantee the signature is valid and the request is not be tempered.</li>
+</ul>
+
+<p><strong>Signature Method</strong></p>
+
+<p>The signature may be different if the request text is different, therefore the request should be normalized before signing. Below signing steps take the order query as an example:</p>
+
+<p>This is a full URL to query one order:</p>
+
+<p><code>https://api.snapex.com/v1/orders/history/get</code></p>
+
+<p><code>AccessKeyId=e2xxxxxx-99xxxxxx-84xxxxxx-7xxxx</code></p>
+
+<p><code>&amp;SignatureMethod=HmacSHA256</code></p>
+
+<p><code>&amp;SignatureVersion=2</code></p>
+
+<p><code>&amp;Timestamp=2020-05-11T15:19:30</code></p>
+
+<p><code>&amp;code=1234567890</code></p>
+
+<ol>
+<li>The request Method (GET or POST, WebSocket use GET), append line break “\n”</li>
+</ol>
+
+<p>GET\n</p>
+
+<ol>
+<li>The host with lower case, append line break “\n”</li>
+</ol>
+
+<p>Example: api.snapex.com\n</p>
+
+<ol>
+<li>The path, append line break “\n”</li>
+</ol>
+
+<p>For example, query orders:</p>
+
+<p><code>/v1/order/orders/history/get\n</code></p>
+
+<p>For example, WebSocket v1</p>
+
+<p><code>/ws/v1</code></p>
+
+<ol>
+<li>The parameters are URL encoded, and ordered based on ASCII</li>
+</ol>
+
+<p>For example below is the original parameters:</p>
+
+<p><code>AccessKeyId=ylxxxxxx-t9xxxxxx-uixxxxxx-9xxxxxx</code></p>
+
+<p><code>code=1234567890</code></p>
+
+<p><code>SignatureMethod=HmacSHA256</code></p>
+
+<p><code>SignatureVersion=1</code></p>
+
+<p><code>Timestamp=2017-05-11T15%3A19%3A30</code></p>
+
+<p>Use UTF-8 encoding and URL encoded, the hex must be upper case. For example, The semicolon &#39;:&#39; should be encoded as &#39;%3A&#39;, The space should be encoded as &#39;%20&#39;.
+ The &#39;timestamp&#39; should be formated as &#39;YYYY-MM-DDThh:mm:ss&#39; and URL encoded.
+Then above parameter should be ordered like below:</p>
+
+<p><code>AccessKeyId=ylxxxxxx-t9xxxxxx-uixxxxxx-9xxxxxx</code></p>
+
+<p><code>SignatureMethod=HmacSHA256</code></p>
+
+<p><code>SignatureVersion=1</code></p>
+
+<p><code>Timestamp=2020-05-11T15%3A19%3A30</code></p>
+
+<p><code>code=1234567890</code></p>
+
+<ol>
+<li>Use char “&amp;” to concatenate all parameters</li>
+</ol>
+
+<p><code>AccessKeyId=ylxxxxxx-t9xxxxxx-uixxxxxx-9xxxxxx&amp;SignatureMethod=HmacSHA256&amp;SignatureVersion=1&amp;Timestamp=2020-05-11T15%3A19%3A30&amp;code=1234567890</code></p>
+
+<ol>
+<li>Assemble the pre-signed text</li>
+</ol>
+
+<p>GET\n</p>
+
+<p>api.snapex.com\n</p>
+
+<p>/v1/order/orders/history/get\n</p>
+
+<p>AccessKeyId=ylxxxxxx-t9xxxxxx-uixxxxxx-9xxxxxx&amp;SignatureMethod=HmacSHA256&amp;SignatureVersion=1&amp;Timestamp=2020-05-11T15%3A19%3A30&amp;code=1234567890</p>
+
+<ol>
+<li>Use the pre-signed text and your Secret Key to generate a signature</li>
+</ol>
+
+<p>Use the pre-signed text in above step and your API Secret Key to generate hash code by HmacSHA256 hash function.
+Encode the hash code with base-64 to generate the signature.
+Ef65x8IDLyMWVQj3Aqp+B4w+ivaA8d9Oi2SuYtCJ9o=</p>
+
+<ol>
+<li>Put the signature into request URL</li>
+</ol>
+
+<p>For Rest interface:</p>
+
+<p>Put all the parameters in the URL
+Append the signature in the URL, with parameter name “Signature”.
+Finally, the request sent to API should be:</p>
+
+<p><code>https://api.snapex.com/v1/orders/history/get?AccessKeyId=ylxxxxxx-t9xxxxxx-uixxxxxx-9xxxxxx&amp;code=1234567890&amp;SignatureMethod=HmacSHA256&amp;SignatureVersion=1&amp;Timestamp=2017-05-11T15%3A19%3A30&amp;Signature=4F65x5A2bLyMWVQj3Aqp%2BB4w%2BivaA7n5Oi2SuYtCJ9o%3D</code></p>
+
+<p>For WebSocket interface:</p>
+
+<p>Fill the value according to required JSON schema
+The value in JSON doesn&#39;t require URL encode
+For example:</p>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="nl">"AccessKey"</span><span class="p">:</span><span class="s2">"ylxxxxxx-t9xxxxxx-uixxxxxx-9xxxxxx"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"SignatureMethod"</span><span class="p">:</span><span class="s2">"HmacSHA256"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"SignatureVersion"</span><span class="p">:</span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"Timestamp"</span><span class="p">:</span><span class="s2">"2020-09-01T18:16:16"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"Signature"</span><span class="p">:</span><span class="s2">"Ef65x8IDLyMWVQj3Aqp+B4w+ivaA8d9Oi2SuYtCJ9o="</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre></div><h1 id='k-line-endpoints'>K-Line Endpoints</h1>
+<p>API Key Permission：Read.</p>
+
+<p>This endpoint returns a list of K-lines history data for all public users.</p>
+
+<p><strong>HTTP Request</strong>: <code>GET /v1/kline/{symbol}/{kType}/{size}</code></p>
+
+<aside class="notice">
+You should directly interpret the parameters inside `{}` with your actual parameters.
+Example `GET /v1/kline/btcusd/1/10`
+</aside>
+
+<p><strong>Reqeust Parameters</strong>：</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Mandatory</th>
+<th>Data Type</th>
+<th>Value Range</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>kType</td>
+<td>Data range</td>
+<td>true</td>
+<td>integer</td>
+<td>1: 1 day, 2: 1 min, 3: 5 mins, 4: 15 mins, 5: 1 hour, 7: 4 hours</td>
+</tr>
+<tr>
+<td>size</td>
+<td>Fetch size</td>
+<td>true</td>
+<td>integer</td>
+<td>1-200</td>
+</tr>
+<tr>
+<td>symbol</td>
+<td>Trading symbol (wildcard inacceptable)</td>
+<td>true</td>
+<td>string</td>
+<td>btcusd, ltcusd, xrpusd, eosusd, ethusd, adausd, bchusd, etcusd, linkusd, bnbusd, trxusd...</td>
+</tr>
+</tbody></table>
+
+<p><strong>Response Content</strong>:</p>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"open"</span><span class="p">:</span><span class="w"> </span><span class="mf">9313.2881</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"close"</span><span class="p">:</span><span class="w"> </span><span class="mf">9316.2478</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"low"</span><span class="p">:</span><span class="w"> </span><span class="mf">9260.2442</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"high"</span><span class="p">:</span><span class="w"> </span><span class="mf">9390.1536</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"vol"</span><span class="p">:</span><span class="w"> </span><span class="mf">4190.569625</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"time"</span><span class="p">:</span><span class="w"> </span><span class="mi">1589414400</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Success"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-14 11:07:46"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Data Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>Return code</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>data</td>
+<td>Return data (if avaliable, check below <code>Kline Entity</code> )</td>
+<td>array</td>
+</tr>
+<tr>
+<td>message</td>
+<td>Return message</td>
+<td>string</td>
+</tr>
+<tr>
+<td>time</td>
+<td>Return timestamp</td>
+<td>string</td>
+</tr>
+</tbody></table>
+
+<p><strong>Kline Entity</strong></p>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Data Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>close</td>
+<td>Close price</td>
+<td>number</td>
+</tr>
+<tr>
+<td>high</td>
+<td>High price</td>
+<td>number</td>
+</tr>
+<tr>
+<td>low</td>
+<td>Low price</td>
+<td>number</td>
+</tr>
+<tr>
+<td>open</td>
+<td>Open price</td>
+<td>number</td>
+</tr>
+<tr>
+<td>time</td>
+<td>Market Timestamp</td>
+<td>long</td>
+</tr>
+<tr>
+<td>vol</td>
+<td>Volume</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h1 id='k-line-websocket-streams'>K-Line WebSocket streams</h1>
+<p>API Key Permission：Read.</p>
+
+<p>This WebSocket returns a list of K-lines history data for owned by this API user.</p>
+
+<p><strong>WebSocket Path</strong>: wss://api.snapex.com/ws/v1/kline</p>
+
+<aside class="notice">
+The WebSocket server will check the idle connections every 60 seconds. If the WebSocket server does not receive any request frame from the connection within a 1 minute period, the connection will be disconnected. Unsolicited request frames are not allowed.
+</aside>
+
+<p><strong>Reqeust Parameters</strong>：</p>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+
+  </span><span class="nl">"kType"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"symbol"</span><span class="p">:</span><span class="w"> </span><span class="s2">"btcusd"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"size"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre></div>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Mandatory</th>
+<th>Data Type</th>
+<th>Value Range</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>kType</td>
+<td>Data range</td>
+<td>true</td>
+<td>integer</td>
+<td>1: 1 day, 2: 1 min, 3: 5 mins, 4: 15 mins, 5: 1 hour, 7: 4 hours</td>
+</tr>
+<tr>
+<td>size</td>
+<td>Fetch size</td>
+<td>true</td>
+<td>integer</td>
+<td>1-200</td>
+</tr>
+<tr>
+<td>symbol</td>
+<td>Trading symbol (wildcard inacceptable)</td>
+<td>true</td>
+<td>string</td>
+<td>btcusd, ltcusd, xrpusd, eosusd, ethusd, adausd, bchusd, etcusd</td>
+</tr>
+</tbody></table>
+
+<p><strong>Response Content</strong>:</p>
+
+<aside class="notice">
+If you connect to the WebSocket successfully at the 1st time, it will return the response message `PONG`.
+</aside>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PONG"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Success"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-14 11:07:46"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<aside class="notice">
+After that, you can receive the actual K-line data as below:
+</aside>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"open"</span><span class="p">:</span><span class="w"> </span><span class="mf">9313.2881</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"close"</span><span class="p">:</span><span class="w"> </span><span class="mf">9316.2478</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"low"</span><span class="p">:</span><span class="w"> </span><span class="mf">9260.2442</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"high"</span><span class="p">:</span><span class="w"> </span><span class="mf">9390.1536</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"vol"</span><span class="p">:</span><span class="w"> </span><span class="mf">4190.569625</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"time"</span><span class="p">:</span><span class="w"> </span><span class="mi">1589414400</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Success"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-14 11:07:46"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Data Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>Return code</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>data</td>
+<td>Return data (if avaliable, check below <code>Kline Entity</code> )</td>
+<td>array</td>
+</tr>
+<tr>
+<td>message</td>
+<td>Return message</td>
+<td>string</td>
+</tr>
+<tr>
+<td>time</td>
+<td>Return timestamp</td>
+<td>string</td>
+</tr>
+</tbody></table>
+
+<p><strong>Kline Entity</strong></p>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Data Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>close</td>
+<td>Close price</td>
+<td>number</td>
+</tr>
+<tr>
+<td>high</td>
+<td>High price</td>
+<td>number</td>
+</tr>
+<tr>
+<td>low</td>
+<td>Low price</td>
+<td>number</td>
+</tr>
+<tr>
+<td>open</td>
+<td>Open price</td>
+<td>number</td>
+</tr>
+<tr>
+<td>time</td>
+<td>Market Timestamp</td>
+<td>long</td>
+</tr>
+<tr>
+<td>vol</td>
+<td>Volume</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h1 id='trading-endpoints'>Trading Endpoints</h1><h2 id='position-history'>Position History</h2>
+<p>API Key Permission：Read</p>
+
+<p>This endpoint returns a list of historical orders owned by this API user.</p>
+
+<p><strong>HTTP Request</strong>: <code>GET /v1/orders/history/get</code></p>
+
+<p><strong>Reqeust Parameters</strong>：</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Mandatory</th>
+<th>Data Type</th>
+<th>Value Range</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>Order Code</td>
+<td>false</td>
+<td>string</td>
+<td>-</td>
+</tr>
+<tr>
+<td>direction</td>
+<td>Order Type</td>
+<td>false</td>
+<td>integer</td>
+<td>1: up, 2: down</td>
+</tr>
+<tr>
+<td>deviceType</td>
+<td>Device Type</td>
+<td>false</td>
+<td>string</td>
+<td>iOS, Android, Web</td>
+</tr>
+<tr>
+<td>currencyName</td>
+<td>Currency Name</td>
+<td>false</td>
+<td>string</td>
+<td>btcusd, eosusd, ltcusd, adausd, xrpusd, ethusd, etcusd, bchusd</td>
+</tr>
+<tr>
+<td>begin</td>
+<td>Filter start time</td>
+<td>false</td>
+<td>string</td>
+<td>Format <code>yyyy-MM-dd HH:mm:ss</code></td>
+</tr>
+<tr>
+<td>end</td>
+<td>Filter end time</td>
+<td>false</td>
+<td>string</td>
+<td>Format <code>yyyy-MM-dd HH:mm:ss</code></td>
+</tr>
+</tbody></table>
+
+<p><strong>Response Content</strong>:</p>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Success"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-14 11:58:06"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"fd14628655274ae98b5e86741e1c1558"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"cid"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"cusSuperior"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"direction"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"amount"</span><span class="p">:</span><span class="w"> </span><span class="mi">150</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"orderTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-02-22 18:50:44"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"strikePrice"</span><span class="p">:</span><span class="w"> </span><span class="mf">8662.642</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"settlement"</span><span class="p">:</span><span class="w"> </span><span class="mf">8662.642</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"charge"</span><span class="p">:</span><span class="w"> </span><span class="mf">2.025</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"profit"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"orderStatus"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"overtime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-02-22 18:50:44"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"state"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"balance"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"stopLoss"</span><span class="p">:</span><span class="w"> </span><span class="mi">8000</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"simulatedTrading"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"sign"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"holdPosition"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"symbol"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"targetProfit"</span><span class="p">:</span><span class="w"> </span><span class="mi">9000</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"money"</span><span class="p">:</span><span class="w"> </span><span class="mf">152.025</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"lever"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"bamoney"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.6075</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"interest"</span><span class="p">:</span><span class="w"> </span><span class="mf">14.58</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"currencyName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"btcusd"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"nightCount"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"cusAccount"</span><span class="p">:</span><span class="w"> </span><span class="s2">"13810000011"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"countryCode"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"countryName"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"pendingTime"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"deviceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"iOS"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"profitRate"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"holdingTime"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"appendCharge"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"positions"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.173157</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"currentPrice"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"normal"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"simuOrder"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Data Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>Return code</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>data</td>
+<td>Return data (if avaliable, check below <code>Order Entity</code> )</td>
+<td>array</td>
+</tr>
+<tr>
+<td>message</td>
+<td>Return message</td>
+<td>string</td>
+</tr>
+<tr>
+<td>time</td>
+<td>Return timestamp</td>
+<td>string</td>
+</tr>
+</tbody></table>
+<h2 id='position-holdings'>Position Holdings</h2>
+<p>API Key Permission：Read</p>
+
+<p>This endpoint returns a list of holding orders owned by this API user.</p>
+
+<p><strong>HTTP Request</strong>: <code>GET /v1/orders/holding/get</code></p>
+
+<p><strong>Reqeust Parameters</strong>：</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Mandatory</th>
+<th>Data Type</th>
+<th>Value Range</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>Order Code</td>
+<td>false</td>
+<td>string</td>
+<td>-</td>
+</tr>
+<tr>
+<td>direction</td>
+<td>Order Type</td>
+<td>false</td>
+<td>integer</td>
+<td>1: up, 2: down</td>
+</tr>
+<tr>
+<td>deviceType</td>
+<td>Device Type</td>
+<td>false</td>
+<td>string</td>
+<td>iOS, Android, Web</td>
+</tr>
+<tr>
+<td>currencyName</td>
+<td>Currency Name</td>
+<td>false</td>
+<td>string</td>
+<td>btcusd, eosusd, ltcusd, adausd, xrpusd, ethusd, etcusd, bchusd</td>
+</tr>
+<tr>
+<td>begin</td>
+<td>Filter start time</td>
+<td>false</td>
+<td>string</td>
+<td>Format <code>yyyy-MM-dd HH:mm:ss</code></td>
+</tr>
+<tr>
+<td>end</td>
+<td>Filter end time</td>
+<td>false</td>
+<td>string</td>
+<td>Format <code>yyyy-MM-dd HH:mm:ss</code></td>
+</tr>
+</tbody></table>
+
+<p><strong>Response Content</strong>:</p>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Success"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-14 11:58:06"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"fd14628655274ae98b5e86741e1c1558"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"cid"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"cusSuperior"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"direction"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"amount"</span><span class="p">:</span><span class="w"> </span><span class="mi">150</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"orderTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-02-22 18:50:44"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"strikePrice"</span><span class="p">:</span><span class="w"> </span><span class="mf">8662.642</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"settlement"</span><span class="p">:</span><span class="w"> </span><span class="mf">8662.642</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"charge"</span><span class="p">:</span><span class="w"> </span><span class="mf">2.025</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"profit"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"orderStatus"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"overtime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-02-22 18:50:44"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"state"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"balance"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"stopLoss"</span><span class="p">:</span><span class="w"> </span><span class="mi">8000</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"simulatedTrading"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"sign"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"holdPosition"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"symbol"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"targetProfit"</span><span class="p">:</span><span class="w"> </span><span class="mi">9000</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"money"</span><span class="p">:</span><span class="w"> </span><span class="mf">152.025</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"lever"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"bamoney"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.6075</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"interest"</span><span class="p">:</span><span class="w"> </span><span class="mf">14.58</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"currencyName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"btcusd"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"nightCount"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"cusAccount"</span><span class="p">:</span><span class="w"> </span><span class="s2">"13810000011"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"countryCode"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"countryName"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"pendingTime"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"deviceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"iOS"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"profitRate"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"holdingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"13810000011"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"appendCharge"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"positions"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.173157</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"currentPrice"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"normal"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"simuOrder"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Data Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>Return code</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>data</td>
+<td>Return data (if avaliable, check below <code>Order Entity</code> )</td>
+<td>array</td>
+</tr>
+<tr>
+<td>message</td>
+<td>Return message</td>
+<td>string</td>
+</tr>
+<tr>
+<td>time</td>
+<td>Return timestamp</td>
+<td>string</td>
+</tr>
+</tbody></table>
+<h2 id='positon-pendings'>Positon Pendings</h2>
+<p>API Key Permission：Read</p>
+
+<p>This endpoint returns a list of pending orders owned by this API user.</p>
+
+<p><strong>HTTP Request</strong>: <code>GET /v1/orders/pending/get</code></p>
+
+<p><strong>Reqeust Parameters</strong>：</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Mandatory</th>
+<th>Data Type</th>
+<th>Value Range</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>Order Code</td>
+<td>false</td>
+<td>string</td>
+<td>-</td>
+</tr>
+<tr>
+<td>direction</td>
+<td>Order Type</td>
+<td>false</td>
+<td>integer</td>
+<td>1: up, 2: down</td>
+</tr>
+<tr>
+<td>deviceType</td>
+<td>Device Type</td>
+<td>false</td>
+<td>string</td>
+<td>iOS, Android, Web</td>
+</tr>
+<tr>
+<td>currencyName</td>
+<td>Currency Name</td>
+<td>false</td>
+<td>string</td>
+<td>btcusd, eosusd, ltcusd, adausd, xrpusd, ethusd, etcusd, bchusd</td>
+</tr>
+<tr>
+<td>begin</td>
+<td>Filter start time</td>
+<td>false</td>
+<td>string</td>
+<td>Format <code>yyyy-MM-dd HH:mm:ss</code></td>
+</tr>
+<tr>
+<td>end</td>
+<td>Filter end time</td>
+<td>false</td>
+<td>string</td>
+<td>Format <code>yyyy-MM-dd HH:mm:ss</code></td>
+</tr>
+</tbody></table>
+
+<p><strong>Response Content</strong>:</p>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Success"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-14 11:58:06"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"fd14628655274ae98b5e86741e1c1558"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"cid"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"cusSuperior"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"direction"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"amount"</span><span class="p">:</span><span class="w"> </span><span class="mi">150</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"orderTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-02-22 18:50:44"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"strikePrice"</span><span class="p">:</span><span class="w"> </span><span class="mf">8662.642</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"settlement"</span><span class="p">:</span><span class="w"> </span><span class="mf">8662.642</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"charge"</span><span class="p">:</span><span class="w"> </span><span class="mf">2.025</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"profit"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"orderStatus"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"overtime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-02-22 18:50:44"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"state"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"balance"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"stopLoss"</span><span class="p">:</span><span class="w"> </span><span class="mi">8000</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"simulatedTrading"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"sign"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"holdPosition"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"symbol"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"targetProfit"</span><span class="p">:</span><span class="w"> </span><span class="mi">9000</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"money"</span><span class="p">:</span><span class="w"> </span><span class="mf">152.025</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"lever"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"bamoney"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.6075</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"interest"</span><span class="p">:</span><span class="w"> </span><span class="mf">14.58</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"currencyName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"btcusd"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"nightCount"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"cusAccount"</span><span class="p">:</span><span class="w"> </span><span class="s2">"13810000011"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"countryCode"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"countryName"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"pendingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-02-22 18:50:44"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"deviceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"iOS"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"profitRate"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"holdingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"13810000011"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"appendCharge"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"positions"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.173157</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"currentPrice"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"normal"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"simuOrder"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Data Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>Return code</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>data</td>
+<td>Return data (if avaliable, check below <code>Order Entity</code> )</td>
+<td>array</td>
+</tr>
+<tr>
+<td>message</td>
+<td>Return message</td>
+<td>string</td>
+</tr>
+<tr>
+<td>time</td>
+<td>Return timestamp</td>
+<td>string</td>
+</tr>
+</tbody></table>
+<h2 id='create-order'>Create Order</h2>
+<p>API Key Permission：Trade</p>
+
+<p>This endpoint is create order or pending order and returns ordercode and points awarded.</p>
+
+<p><strong>HTTP Request</strong>: <code>GET /v1/orders/createOrder</code></p>
+
+<p><strong>Reqeust Parameters</strong>：</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Mandatory</th>
+<th>Data Type</th>
+<th>Value Range</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>leverage</td>
+<td>leverage</td>
+<td>true</td>
+<td>string</td>
+<td>-</td>
+</tr>
+<tr>
+<td>startBond</td>
+<td>principal</td>
+<td>true</td>
+<td>number</td>
+<td>-</td>
+</tr>
+<tr>
+<td>targetProfit</td>
+<td>take profit price,after reaching the price,system will try close the order</td>
+<td>true</td>
+<td>number</td>
+<td>-</td>
+</tr>
+<tr>
+<td>stopLoss</td>
+<td>stop loss,after reaching the price,system will try close the order</td>
+<td>true</td>
+<td>number</td>
+<td>-</td>
+</tr>
+<tr>
+<td>openPrice</td>
+<td>pending price</td>
+<td>false</td>
+<td>number</td>
+<td>-</td>
+</tr>
+<tr>
+<td>direction</td>
+<td>order direction</td>
+<td>true</td>
+<td>integer</td>
+<td>1: up, 2: down</td>
+</tr>
+<tr>
+<td>currencyName</td>
+<td>Currency Name</td>
+<td>false</td>
+<td>string</td>
+<td>btcusd, eosusd...</td>
+</tr>
+<tr>
+<td>type</td>
+<td>overnight type</td>
+<td>true</td>
+<td>integer</td>
+<td>0: no, 1: overnight</td>
+</tr>
+</tbody></table>
+
+<p><strong>Response Content</strong>:</p>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Success"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-12-09 13:55:23"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"feeBackIntegral"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.15</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"ordercode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"31e5e78921264f5094c9d74632847e8a"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Data Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>Return code</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>data</td>
+<td>Return data with ordercode and points awarded</td>
+<td>object</td>
+</tr>
+<tr>
+<td>message</td>
+<td>Return message</td>
+<td>string</td>
+</tr>
+<tr>
+<td>time</td>
+<td>Return timestamp</td>
+<td>string</td>
+</tr>
+</tbody></table>
+<h2 id='variation-margin'>Variation Margin</h2>
+<p>API Key Permission：Trade</p>
+
+<p>This endpoint is variation order margin.</p>
+
+<p><strong>HTTP Request</strong>: <code>GET /v1/orders/appendMargin</code></p>
+
+<p><strong>Reqeust Parameters</strong>：</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Mandatory</th>
+<th>Data Type</th>
+<th>Value Range</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>order code</td>
+<td>true</td>
+<td>string</td>
+<td>-</td>
+</tr>
+<tr>
+<td>appendAmount</td>
+<td>margin amount</td>
+<td>true</td>
+<td>number</td>
+<td>-</td>
+</tr>
+</tbody></table>
+
+<p><strong>Response Content</strong>:</p>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Success"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-14 11:58:06"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Data Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>Return code</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>message</td>
+<td>Return message</td>
+<td>string</td>
+</tr>
+<tr>
+<td>time</td>
+<td>Return timestamp</td>
+<td>string</td>
+</tr>
+</tbody></table>
+<h2 id='update-tp-sl-price'>Update TP/SL Price</h2>
+<p>API Key Permission：Trade</p>
+
+<p>This endpoint is update take profit price and stop loss price.</p>
+
+<p><strong>HTTP Request</strong>: <code>GET /v1/orders/updateStandard</code></p>
+
+<p><strong>Reqeust Parameters</strong>：</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Mandatory</th>
+<th>Data Type</th>
+<th>Value Range</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>order code</td>
+<td>true</td>
+<td>string</td>
+<td>-</td>
+</tr>
+<tr>
+<td>targetProfit</td>
+<td>take profit price</td>
+<td>true</td>
+<td>number</td>
+<td>-</td>
+</tr>
+<tr>
+<td>stopLoss</td>
+<td>stop loss price</td>
+<td>true</td>
+<td>number</td>
+<td>-</td>
+</tr>
+</tbody></table>
+
+<p><strong>Response Content</strong>:</p>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Success"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-14 11:58:06"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Data Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>Return code</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>message</td>
+<td>Return message</td>
+<td>string</td>
+</tr>
+<tr>
+<td>time</td>
+<td>Return timestamp</td>
+<td>string</td>
+</tr>
+</tbody></table>
+<h2 id='change-overnight-type'>Change Overnight Type</h2>
+<p>API Key Permission：Trade</p>
+
+<p>This endpoint is change order overnight type.</p>
+
+<p><strong>HTTP Request</strong>: <code>GET /v1/orders/changeOverNightType</code></p>
+
+<p><strong>Reqeust Parameters</strong>：</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Mandatory</th>
+<th>Data Type</th>
+<th>Value Range</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>order code</td>
+<td>true</td>
+<td>string</td>
+<td>-</td>
+</tr>
+<tr>
+<td>type</td>
+<td>overnight type</td>
+<td>true</td>
+<td>number</td>
+<td>0: no, 2: overnight</td>
+</tr>
+</tbody></table>
+
+<p><strong>Response Content</strong>:</p>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Success"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-14 11:58:06"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Data Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>Return code</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>message</td>
+<td>Return message</td>
+<td>string</td>
+</tr>
+<tr>
+<td>time</td>
+<td>Return timestamp</td>
+<td>string</td>
+</tr>
+</tbody></table>
+<h2 id='close-pending-position'>Close Pending Position</h2>
+<p>API Key Permission：Trade</p>
+
+<p>This endpoint is to close the pending order.</p>
+
+<p><strong>HTTP Request</strong>: <code>GET /v1/orders/closePendingOrder</code></p>
+
+<p><strong>Reqeust Parameters</strong>：</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Mandatory</th>
+<th>Data Type</th>
+<th>Value Range</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>order code</td>
+<td>true</td>
+<td>string</td>
+<td>-</td>
+</tr>
+</tbody></table>
+
+<p><strong>Response Content</strong>:</p>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Success"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-14 11:58:06"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Data Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>Return code</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>message</td>
+<td>Return message</td>
+<td>string</td>
+</tr>
+<tr>
+<td>time</td>
+<td>Return timestamp</td>
+<td>string</td>
+</tr>
+</tbody></table>
+<h2 id='close-holding-position'>Close Holding Position</h2>
+<p>API Key Permission：Trade</p>
+
+<p>This endpoint is close the holding order.</p>
+
+<p><strong>HTTP Request</strong>: <code>GET /v1/orders/closeHoldingOrder</code></p>
+
+<p><strong>Reqeust Parameters</strong>：</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Mandatory</th>
+<th>Data Type</th>
+<th>Value Range</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>order code</td>
+<td>true</td>
+<td>string</td>
+<td>-</td>
+</tr>
+</tbody></table>
+
+<p><strong>Response Content</strong>:</p>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Success"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-14 11:58:06"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Data Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>Return code</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>message</td>
+<td>Return message</td>
+<td>string</td>
+</tr>
+<tr>
+<td>time</td>
+<td>Return timestamp</td>
+<td>string</td>
+</tr>
+</tbody></table>
+<h2 id='order-entity'>Order Entity</h2>
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Data Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>Order Id</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>code</td>
+<td>Order Code</td>
+<td>string</td>
+</tr>
+<tr>
+<td>cid</td>
+<td>Customer Id</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>cusSuperior</td>
+<td>Customer Supervisor</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>direction</td>
+<td>Order Type</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>amount</td>
+<td>Trading Amount</td>
+<td>number</td>
+</tr>
+<tr>
+<td>orderTime</td>
+<td>Order Time -  Format <code>yyyy-MM-dd HH:mm:ss</code></td>
+<td>datetime</td>
+</tr>
+<tr>
+<td>strikePrice</td>
+<td>Strike Price</td>
+<td>number</td>
+</tr>
+<tr>
+<td>settlement</td>
+<td>Settle Price</td>
+<td>number</td>
+</tr>
+<tr>
+<td>charge</td>
+<td>Service Charge</td>
+<td>number</td>
+</tr>
+<tr>
+<td>profit</td>
+<td>Profit</td>
+<td>number</td>
+</tr>
+<tr>
+<td>orderStatus</td>
+<td>Order Status - 0: pending, 1: finished</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>overtime</td>
+<td>Order Finish Time -  Format <code>yyyy-MM-dd HH:mm:ss</code></td>
+<td>datetime</td>
+</tr>
+<tr>
+<td>state</td>
+<td>Account Status - 0: pending, 1: forced liquidation, 2: non-overnight charge, 3: manual liquidation, 4: overnight charge due</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>stopLoss</td>
+<td>Stop-loss</td>
+<td>number</td>
+</tr>
+<tr>
+<td>simulatedTrading</td>
+<td>Flag of Simulated Trading - 0: no, 1: yes</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>Flag of Overnight Charge - 0: no, 1: yes</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>holdPosition</td>
+<td>Hold Position</td>
+<td>string</td>
+</tr>
+<tr>
+<td>symbol</td>
+<td>Symbol</td>
+<td>string</td>
+</tr>
+<tr>
+<td>type</td>
+<td>Flag of Overnight - 0: no, 1: yes</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>targetProfit</td>
+<td>Target Profit</td>
+<td>number</td>
+</tr>
+<tr>
+<td>money</td>
+<td>Purchase Money</td>
+<td>number</td>
+</tr>
+<tr>
+<td>lever</td>
+<td>Lever</td>
+<td>number</td>
+</tr>
+<tr>
+<td>bamoney</td>
+<td>Overnight Charge(per day)</td>
+<td>number</td>
+</tr>
+<tr>
+<td>interest</td>
+<td>Overnight Charge(total)</td>
+<td>number</td>
+</tr>
+<tr>
+<td>currencyName</td>
+<td>Currency Name</td>
+<td>string</td>
+</tr>
+<tr>
+<td>nightCount</td>
+<td>Days of Overnight</td>
+<td>number</td>
+</tr>
+<tr>
+<td>cusAccount</td>
+<td>Customer Account</td>
+<td>number</td>
+</tr>
+<tr>
+<td>countryCode</td>
+<td>Country Code</td>
+<td>string</td>
+</tr>
+<tr>
+<td>countryName</td>
+<td>Country Name</td>
+<td>string</td>
+</tr>
+<tr>
+<td>pendingTime</td>
+<td>Pending Time -  Format <code>yyyy-MM-dd HH:mm:ss</code></td>
+<td>datetime</td>
+</tr>
+<tr>
+<td>deviceType</td>
+<td>Device Type - Range: iOS, Android, Web</td>
+<td>string</td>
+</tr>
+<tr>
+<td>profitRate</td>
+<td>Profit Rate</td>
+<td>number</td>
+</tr>
+<tr>
+<td>holdingTime</td>
+<td>Holding Time</td>
+<td>long</td>
+</tr>
+<tr>
+<td>appendCharge</td>
+<td>Append Charge</td>
+<td>number</td>
+</tr>
+<tr>
+<td>positions</td>
+<td>Positions</td>
+<td>number</td>
+</tr>
+<tr>
+<td>currentPrice</td>
+<td>Current Price</td>
+<td>number</td>
+</tr>
+<tr>
+<td>normal</td>
+<td>Order Category - true: normal, false: pending</td>
+<td>boolean</td>
+</tr>
+<tr>
+<td>simuOrder</td>
+<td>Simulated Order - true: yes, false: no</td>
+<td>boolean</td>
+</tr>
+</tbody></table>
+<h1 id='errors'>Errors</h1><h2 id='http-error-codes'>HTTP error codes</h2>
+<table><thead>
+<tr>
+<th>Error Code</th>
+<th>Meaning</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>400</td>
+<td>Bad Request -- Your request is invalid.</td>
+</tr>
+<tr>
+<td>401</td>
+<td>Unauthorized -- Your API key is wrong.</td>
+</tr>
+<tr>
+<td>403</td>
+<td>Forbidden -- The kitten requested is hidden for administrators only.</td>
+</tr>
+<tr>
+<td>404</td>
+<td>Not Found -- The specified kitten could not be found.</td>
+</tr>
+<tr>
+<td>405</td>
+<td>Method Not Allowed -- You tried to access a kitten with an invalid method.</td>
+</tr>
+<tr>
+<td>406</td>
+<td>Not Acceptable -- You requested a format that isn&#39;t json.</td>
+</tr>
+<tr>
+<td>410</td>
+<td>Gone -- The request has been removed from our servers.</td>
+</tr>
+<tr>
+<td>500</td>
+<td>Internal Server Error -- We had a problem with our server. Try again later.</td>
+</tr>
+<tr>
+<td>503</td>
+<td>Service Unavailable -- We&#39;re temporarily offline for maintenance. Please try again later.</td>
+</tr>
+</tbody></table>
+<h2 id='100xxx-access-key-amp-signature-error'>100xxx - Access Key &amp; Signature Error</h2>
+<table><thead>
+<tr>
+<th>Error Code</th>
+<th>Meaning</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>100001</td>
+<td>Access Key Not Exist -- Your should checkout your access key from website.</td>
+</tr>
+<tr>
+<td>100002</td>
+<td>Parameter Validation Error: %s -- You can check the detailed message to fix it.</td>
+</tr>
+<tr>
+<td>100003</td>
+<td>Signature Validation Failed: %s -- You can check the detailed message to fix it.</td>
+</tr>
+<tr>
+<td>100004</td>
+<td>AccessKey Expired -- You can bind your IP to make it permanently.</td>
+</tr>
+<tr>
+<td>100005</td>
+<td>Wrong IP Address for the Binding -- Your current IP Address does not match the bindings.</td>
+</tr>
+</tbody></table>
+
+      </div>
+      <div class="dark-box">
+          <div class="lang-selector">
+                <a href="#" data-language-name="json">json</a>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>

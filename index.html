@@ -308,14 +308,17 @@
               </ul>
           </li>
           <li>
-              <a href="#public" class="toc-h1 toc-link" data-title="Public">Public</a>
+              <a href="#Public" class="toc-h1 toc-link" data-title="Public">Public</a>
               <ul class="toc-list-h2">
                   <li>
-                      <a href="#public-cmc-api" class="toc-h2 toc-link" data-title="CMC API">API</a>
+                      <a href="#tradingPairs" class="toc-h2 toc-link" data-title="tradingPairs">trading pairs</a>
                   </li>
-<!--                  <li>-->
-<!--                      <a href="#100xxx-access-key-amp-signature-error" class="toc-h2 toc-link" data-title="100xxx - Access Key &amp; Signature Error">100xxx - Access Key &amp; Signature Error</a>-->
-<!--                  </li>-->
+                  <li>
+                      <a href="#depth" class="toc-h2 toc-link" data-title="depth">depth</a>
+                  </li>
+                  <li>
+                      <a href="#tickers" class="toc-h2 toc-link" data-title="tickers">tickers</a>
+                  </li>
               </ul>
           </li>
       </ul>
@@ -1923,15 +1926,29 @@ After that, you can receive the actual K-line data as below:
 </tr>
 
 </tbody></table>-->
-<h1 id='public'>Public</h1><h2 id='public-cmc-api'>public cmc api</h2><br/>
+          <!--<h1 id='general-info'>General Info</h1><h2 id='general-api-information'>General API Information</h2>
+          <ul>
+              <li>Some endpoints will require an API Key. </li>
+              <li>The base endpoint is: <code>https://api.moonxbt.com</code></li>
+              <li>All endpoints return either a JSON object or array.</li>
+              <li>Data is returned in ascending order. Oldest first, newest last.</li>
+              <li>All time and timestamp related fields are in milliseconds.</li>
+          </ul>
+          <h2 id='http-return-codes'>HTTP Return Codes</h2>
+          <ul>
+              <li>HTTP 200 OK</li>
+              <li>HTTP 4XX return codes are used for malformed requests; the issue is on the sender&#39;s side.</li>
+              <li>HTTP 5XX return codes are used for internal errors; the issue is on MoonXBT&#39;s side.</li>
+          </ul>
+          <h2 id='general-information-on-endpoints'>General Information on Endpoints</h2>-->
+<h1 id='Public'>Public</h1>
+          <h2 id='tradingPairs'>trading-pairs</h2>
 <p>API Key Permission：Read.</p>
-
 <p>Provide summary information of all trading pairs.</p>
 
 <p><strong>HTTP Request</strong>: https://api.moonxbt.com/api/v1/futures</p>
-          <br/><br/>
+          <h2 id='depth'>depth</h2>
 <p>API Key Permission：Read.</p>
-
 <p>Provide order book information with at least depth = 100 (50 each side) returned for a given market pair/ticker. </p>
 
 <p><strong>HTTP Request</strong>: https://api.moonxbt.com/api/v1/markets/BTC-PERPUSDT/orderbook</p>
@@ -1939,10 +1956,7 @@ After that, you can receive the actual K-line data as below:
 
 <p><strong>Reqeust Parameters</strong>：</p>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-
-</span><span class="nl">"depth"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-</span><span class="nl">"symbol"</span><span class="p">:</span><span class="w"> </span><span class="s2">"btcusd"</span><span class="p">,</span><span class="w">
-</span><span class="nl">"size"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+</span><span class="nl">"depth"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="w">
 </span><span class="p">}</span><span class="w">
 
 </span></code></pre></div>
@@ -1963,9 +1977,8 @@ After that, you can receive the actual K-line data as below:
   <td>at least 100</td>
 </tr>
 </tbody></table>
-          <br/><br/>
+          <h2 id='tickers'>tickers</h2>
 <p>API Key Permission：Read.</p>
-
 <p>Provide the specifications of all trading pairs, including the price and type of the contract.</p>
 
 <p><strong>HTTP Request</strong>: https://api.moonxbt.com/api/v1/tickers</p>

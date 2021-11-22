@@ -1947,6 +1947,59 @@ After that, you can receive the actual K-line data as below:
 <p>Provide summary information of all trading pairs.</p>
 
 <p><strong>HTTP Request</strong>: https://api.moonxbt.com/api/v1/futures</p>
+
+  <!--start-->
+  <p><strong>Response Content</strong>:</p>
+          <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+</span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+</span><span class="nl">"result"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+</span><span class="p">{</span><span class="w">
+    </span><span class="nl">"ticker_id"</span><span class="p">:</span><span class="w"> </span><span class="mf">SXP-PERPUSDT</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"base_currency"</span><span class="p">:</span><span class="w"> </span><span class="mf">SXP</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"quote_currency"</span><span class="p">:</span><span class="w"> </span><span class="mf">USDT</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"last_price"</span><span class="p">:</span><span class="w"> </span><span class="mf">2.35500000</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"base_volume"</span><span class="p">:</span><span class="w"> </span><span class="mf">8656873.8200000</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"quote_volume"</span><span class="p">:</span><span class="w"> </span><span class="mi">20784373.4065800000</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"bid"</span><span class="p">:</span><span class="w"> </span><span class="mi">59551.00000000</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"ask"</span><span class="p">:</span><span class="w"> </span><span class="mi">7.00000000</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"high"</span><span class="p">:</span><span class="w"> </span><span class="mi">2.46600000</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"low"</span><span class="p">:</span><span class="w"> </span><span class="mi">2.33600000</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"product_type"</span><span class="p">:</span><span class="w"> </span><span class="mi">Perpetual</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"open_interest"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"index_price"</span><span class="p">:</span><span class="w"> </span><span class="mi">130.60000000</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"funding_rate"</span><span class="p">:</span><span class="w"> </span><span class="mi">0.0005</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"next_funding_rate"</span><span class="p">:</span><span class="w"> </span><span class="mi">0.0005</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"next_funding_rate_timestamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">1636761600866</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"maker_fee"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"taker_fee"</span><span class="p">:</span><span class="w"> </span><span class="mi">0.0005</span><span class="w">
+</span><span class="p">}],</span><span class="w">
+</span><span class="nl">"success"</span><span class="p">:</span><span class="w"> </span><span class="s2">true</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+  <table><thead>
+  <tr>
+      <th>Field</th>
+      <th>Description</th>
+      <th>Data Type</th>
+  </tr>
+  </thead><tbody>
+  <tr>
+      <td>code</td>
+      <td>Return code</td>
+      <td>integer</td>
+  </tr>
+  <tr>
+      <td>result</td>
+      <td>Return data</td>
+      <td>array</td>
+  </tr>
+  <tr>
+      <td>success</td>
+      <td>Return result</td>
+      <td>boolean</td>
+  </tr>
+  </tbody></table>
+<!--end-->
           <h2 id='depth'>depth</h2>
 <p>API Key Permission：Read.</p>
 <p>Provide order book information with at least depth = 100 (50 each side) returned for a given market pair/ticker. </p>
@@ -1977,11 +2030,117 @@ After that, you can receive the actual K-line data as below:
   <td>at least 100</td>
 </tr>
 </tbody></table>
+
+          <!--start-->
+          <p><strong>Response Content</strong>:</p>
+          <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+</span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+</span><span class="nl">"result"</span><span class="p">:</span>
+</span><span class="p">{</span><span class="w">
+    </span><span class="nl">"asks"</span><span class="p">:</span><span class="w"> </span><span class="mf">[[63777.94,0.004522]</span><span class="p">],</span><span class="w">
+    </span><span class="nl">"bids"</span><span class="p">:</span><span class="w"> </span><span class="mf">[[63777.93,1.078256]</span><span class="p">]</span><span class="w">
+</span><span class="p">},</span><span class="w">
+</span><span class="nl">"ticker_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BTC-PERPUSDT"</span><span class="p">,</span><span class="w">
+</span><span class="nl">"timestamp"</span><span class="p">:</span><span class="w"> </span><span class="s2">1637551589045</span><span class="p">,</span><span class="w">
+</span><span class="nl">"success"</span><span class="p">:</span><span class="w"> </span><span class="s2">true</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+          <table><thead>
+          <tr>
+              <th>Field</th>
+              <th>Description</th>
+              <th>Data Type</th>
+          </tr>
+          </thead><tbody>
+          <tr>
+              <td>code</td>
+              <td>Return code</td>
+              <td>integer</td>
+          </tr>
+          <tr>
+              <td>result</td>
+              <td>Return data</td>
+              <td>object</td>
+          </tr>
+          <tr>
+              <td>ticker_id</td>
+              <td>Return Currency</td>
+              <td>string</td>
+          </tr>
+          <tr>
+              <td>timestamp</td>
+              <td>Return timestamp</td>
+              <td>long</td>
+          </tr>
+          <tr>
+              <td>success</td>
+              <td>Return result</td>
+              <td>boolean</td>
+          </tr>
+          </tbody></table>
+          <!--end-->
           <h2 id='tickers'>tickers</h2>
 <p>API Key Permission：Read.</p>
 <p>Provide the specifications of all trading pairs, including the price and type of the contract.</p>
 
 <p><strong>HTTP Request</strong>: https://api.moonxbt.com/api/v1/tickers</p>
+
+          <!--start-->
+          <p><strong>Response Content</strong>:</p>
+          <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+</span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+</span><span class="nl">"result"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+</span><span class="p">{</span><span class="w"></span>
+    <span class="nl">"ticker_id"</span><span class="p">:</span><span class="w"> </span><span class="mf">SXP-PERPUSDT</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"base_currency"</span><span class="p">:</span><span class="w"> </span><span class="mf">SXP</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"quote_currency"</span><span class="p">:</span><span class="w"> </span><span class="mf">USDT</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"last_price"</span><span class="p">:</span><span class="w"> </span><span class="mf">2.35500000</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"base_volume"</span><span class="p">:</span><span class="w"> </span><span class="mf">8656873.8200000</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"quote_volume"</span><span class="p">:</span><span class="w"> </span><span class="mi">20784373.4065800000</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"bid"</span><span class="p">:</span><span class="w"> </span><span class="mi">59551.00000000</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"ask"</span><span class="p">:</span><span class="w"> </span><span class="mi">7.00000000</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"high"</span><span class="p">:</span><span class="w"> </span><span class="mi">2.46600000</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"low"</span><span class="p">:</span><span class="w"> </span><span class="mi">2.33600000</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"product_type"</span><span class="p">:</span><span class="w"> </span><span class="mi">Perpetual</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"open_interest"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"index_price"</span><span class="p">:</span><span class="w"> </span><span class="mi">130.60000000</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"funding_rate"</span><span class="p">:</span><span class="w"> </span><span class="mi">0.0005</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"next_funding_rate"</span><span class="p">:</span><span class="w"> </span><span class="mi">0.0005</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"next_funding_rate_timestamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">1636761600866</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"maker_fee"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"taker_fee"</span><span class="p">:</span><span class="w"> </span><span class="mi">0.0005</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"contract_type"</span><span class="p">:</span><span class="w"> </span><span class="mi">linear</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"contract_price"</span><span class="p">:</span><span class="w"> </span><span class="mi">2.51100000</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"contract_price_currency"</span><span class="p">:</span><span class="w"> </span><span class="mi">USDT</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span><span class="p">],</span><span class="w">
+</span><span class="nl">"success"</span><span class="p">:</span><span class="w"> </span><span class="s2">true</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+          <table><thead>
+          <tr>
+              <th>Field</th>
+              <th>Description</th>
+              <th>Data Type</th>
+          </tr>
+          </thead><tbody>
+          <tr>
+              <td>code</td>
+              <td>Return code</td>
+              <td>integer</td>
+          </tr>
+          <tr>
+              <td>result</td>
+              <td>Return data</td>
+              <td>array</td>
+          </tr>
+          <tr>
+              <td>success</td>
+              <td>Return result</td>
+              <td>boolean</td>
+          </tr>
+          </tbody></table>
+          <!--end-->
 
 
       </div>
